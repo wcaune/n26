@@ -1,5 +1,12 @@
-# N 26
+# Neutrino 2026 GitLog
 
+## Software
+```bash
+sl7_c
+source ~/.bash_profile
+source /cvmfs/dune.opensciencegrid.org/products/dune/setup_dune.sh
+setup dunesw v10_20_03d00 -q e26:prof
+```
 
 ### Merge plots into one pdf file
 ```python

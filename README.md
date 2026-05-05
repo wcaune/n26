@@ -45,3 +45,18 @@ git checkout pandora/feature/npc_cluster
 git checkout -b feature/npc_cluster pandora/feature/npc_cluster
 
 ```
+### mrb Setup Environment
+In `.../n26ws/srcs/dunesw`,
+
+```bash
+mrbsetenv
+```
+
+Now build!
+```bash
+mrb install -j 32
+```
+### mrb setup local products
+```bash
+mrbslp
+```

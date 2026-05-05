@@ -1,5 +1,17 @@
 # Neutrino 2026 GitLog
 
+## Setup the n26 software again.
+In `dunegpvm10`,
+```bash
+/cvmfs/oasis.opensciencegrid.org/mis/apptainer/current/bin/apptainer shell --shell=/bin/bash --env PS1="(COT)[\H@\w]$" -B /cvmfs,/exp,/nashome,/opt,/run/user,/etc/hostname,/etc/hosts,/etc/krb5.conf --ipc --pid /cvmfs/singularity.opensciencegrid.org/fermilab/fnal-dev-sl7:latest
+
+source /cvmfs/dune.opensciencegrid.org/products/dune/setup_dune.sh
+cd /exp/dune/app/users/$USER/n26ws/
+source localProducts_larsoft_v10_20_06_e26_prof/setup
+mrbslp
+
+```
+
 ## Software
 ```bash
 sl7_c

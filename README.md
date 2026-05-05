@@ -16,6 +16,7 @@ python3 -m img2pdf *.png -o ~/Desktop/e.pdf
 
 
 ## Building Pandora PFA
+### Working area
 In `dunegpvm10`,
 ```bash
 ssh -AKXY dunebuild03
@@ -30,5 +31,17 @@ setup larsoft v10_20_06 -q e26:prof
 mrb newDev
 source localProducts_larsoft_v10_20_06_e26_prof/setup
 
+
+```
+### Checkout dunesw and LArPandora Content
+```bash
+mrb g dunesw larpandoracontent
+cd $MRB_SOURCE/dunesw
+git checkout npcworkshop_may2026
+cd $MRB_SOURCE/larpandoracontent
+git remote add pandora https://github.com/PandoraPFA/LArContent.git
+git fetch pandora
+git checkout pandora/feature/npc_cluster
+git checkout -b feature/npc_cluster pandora/feature/npc_cluster
 
 ```

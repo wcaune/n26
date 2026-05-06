@@ -1,9 +1,12 @@
 # Neutrino 2026 GitLog
 
 ## Setup the n26 software again.
-In `dunegpvm10`,
+
+In `dunegpvm10`, using my favor `\e[35m\]`.
+
+
 ```bash
-/cvmfs/oasis.opensciencegrid.org/mis/apptainer/current/bin/apptainer shell --shell=/bin/bash --env PS1="(COT)[\H@\w]$" -B /cvmfs,/exp,/nashome,/opt,/run/user,/etc/hostname,/etc/hosts,/etc/krb5.conf --ipc --pid /cvmfs/singularity.opensciencegrid.org/fermilab/fnal-dev-sl7:latest
+/cvmfs/oasis.opensciencegrid.org/mis/apptainer/current/bin/apptainer shell --shell=/bin/bash --env PS1="(COT)[\H@\[\e[35m\]\w\[\e[0m\]]$" -B /cvmfs,/exp,/nashome,/opt,/run/user,/etc/hostname,/etc/hosts,/etc/krb5.conf --ipc --pid /cvmfs/singularity.opensciencegrid.org/fermilab/fnal-dev-sl7:latest
 
 source /cvmfs/dune.opensciencegrid.org/products/dune/setup_dune.sh
 cd /exp/dune/app/users/$USER/n26ws/

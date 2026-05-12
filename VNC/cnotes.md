@@ -26,4 +26,6 @@ Then
 ```bash
 chmod a+x xstartup
 ```
+## Wiki
+[icewm VNC](https://wiki.dunescience.org/wiki/DUNE_Computing/Using_VNC_Connections_on_the_dunegpvms#Prerequisite:_Setting_up_your_window_manager_on_the_dunegpvms)
 

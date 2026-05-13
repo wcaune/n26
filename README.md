@@ -75,3 +75,5 @@ mrb install -j 32
 ```bash
 mrbslp
 ```
+# Links
+[NPC DDAS2026](https://indico.fnal.gov/event/73408/timetable/)
